@@ -6826,7 +6826,7 @@ void ImGui::MultiSelectItemFooter(ImGuiID id, bool* p_selected, bool* p_pressed)
     const bool enter_pressed = pressed && (g.NavActivateId == id) && (g.NavActivateFlags & ImGuiActivateFlags_PreferInput);
 
     // Alter selection
-    if (pressed && !enter_pressed)
+    if (pressed && (!enter_pressed || !selected))
     {
         //-------------------------------------------------------------------------------------------------------------------------------------------------
         // ACTION                           | Begin     | Item Old        | Item New                                                   | End
