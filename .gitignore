@@ -1,3 +1,9 @@
+## permake clean
+bin/
+bin-int/
+**.sln
+**/*.vcxproj*
+
 ## OSX artifacts
 .DS_Store
 
